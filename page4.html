@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<hmtl lang="en">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -9,141 +9,135 @@
     
 	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F8F8FF; 
-    color: #696969; 
-    font-size: 20px;
-}
+	body {
+	    font-family: 'Montserrat', sans-serif;
+	    margin: 0;
+	    padding: 0;
+	    background-color: #F8F8FF; 
+	    color: #696969; 
+	    font-size: 20px;
+	}
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #696969; 
-    color: #F8F8FF; 
-    border-bottom: 5px dotted #D3D3D3; 
-    font-size: 2em; 
-    text-transform: uppercase; 
-    letter-spacing: 5px;  
-}
+	header {
+	    text-align: center;
+	    padding: 20px;
+	    background-color: #696969; 
+	    color: #F8F8FF; 
+	    border-bottom: 5px dotted #D3D3D3; 
+	    font-size: 2em; 
+	    text-transform: uppercase; 
+	    letter-spacing: 5px;  
+	}
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 20px;
-    background-color: #F8F8FF; 
-    border-bottom: 3px solid #F8F8FF;
-}
+	nav {
+	    display: flex;
+	    justify-content: space-around;
+	    list-style-type: none;
+	    padding: 20px;
+	    background-color: #F8F8FF; 
+	    border-bottom: 3px solid #F8F8FF;
+	}
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-}
+	nav ul {
+	    display: flex;
+	    justify-content: space-around;
+	}
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
+	nav ul li {
+	    display: inline;
+	    margin: 0 10px;
+	}
 
-nav ul li a {
-    text-decoration: none;
-    color: #696969; 
-    font-size: 1.2em;
-    transition: color 0.3s ease;
-}
+	nav ul li a {
+	    text-decoration: none;
+	    color: #696969; 
+	    font-size: 1.2em;
+	    transition: color 0.3s ease;
+	}
 
-nav ul li a:hover {
-    color: #696969;
-}
-}
+	nav ul li a:hover {
+	    color: #696969;
+	}
 
-nav ul li a:hover {
-    color: #696969;
-}
+	footer {
+	    position: fixed;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    background-color: #696969;
+	    color: #F8F8FF; 
+	    text-align: center;
+	    padding: 10px 0;
+	    font-size: 0.8em;
+	    border-top: 5px dotted #D3D3D3; 
+	    animation: color-change 1s infinite;
+	}
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #696969;
-    color: #F8F8FF; 
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.8em;
-    border-top: 5px dotted #D3D3D3; 
-    animation: color-change 1s infinite;
-}
+	@keyframes color-change {
+	    0% { background-color: #696969; } 
+	    50% { background-color: #D3D3D3; } 
+	    100% { background-color: #696969; }
+	}
 
-@keyframes color-change {
-    0% { background-color: #696969; } 
-    50% { background-color: #D3D3D3; } 
-    100% { background-color: #696969; }
-}
+	.content {
+	    padding: 20px 30px;
+	    background-color: #D3D3D3; 
+	    position: relative;
+	    border-radius: 6px;
+	    transition: transform 0.5s;
+	}
 
-.content {
-    padding: 20px 30px;
-    background-color: #D3D3D3; 
-    position: relative;
-    border-radius: 6px;
-    transition: transform 0.5s;
-}
+	.timeline {
+	    display: flex;
+	    overflow-x: auto;
+	    list-style-type: none;
+	    padding: 20px;
+	    background-color: #F8F8FF;
+	}
 
-.timeline {
-    display: flex;
-    overflow-x: auto;
-    list-style-type: none;
-    padding: 20px;
-    background-color: #F8F8FF;
-}
+	.timeline li {
+	    flex: 0 0 auto;
+	    width: 200px;
+	    margin-right: 20px;
+	    padding: 10px;
+	    background-color: #D3D3D3;
+	    border-radius: 6px;
+	    transition: transform 0.5s;
+	}
 
-.timeline li {
-    flex: 0 0 auto;
-    width: 200px;
-    margin-right: 20px;
-    padding: 10px;
-    background-color: #D3D3D3;
-    border-radius: 6px;
-    transition: transform 0.5s;
-}
+	.timeline li: hover {
+	    transform: scale(1.1);
+	}
 
-.timeline li:hover {
-    transform: scale(1.1);
-}
+	table {
+	    width: 100%;
+	    border-collapse: collapse;
+	    margin: 20px 0;
+	    font-family: 'Comic Sans MS', sans-serif;
+	    background-color: #F8F8FF; 
+	}
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-family: 'Comic Sans MS', sans-serif;
-    background-color: #F8F8FF; 
-}
+	th, td {
+	    border: 1px solid #696969; 
+	    padding: 10px;
+	    text-align: left;
+	}
 
-th, td {
-    border: 1px solid #696969; 
-    padding: 10px;
-    text-align: left;
-}
+	th {
+	    background-color: #696969; 
+	    color: #F8F8FF; 
+	}
 
-th {
-    background-color: #696969; 
-    color: #F8F8FF; 
+	tr:nth-child(even) {
+	    background-color: #D3D3D3; 
+	}
 
-tr:nth-child(even) {
-    background-color: #D3D3D3; 
-}
-
-/* Add a hover effect for rows */
-tr: hover {
-    background-color: #696969; 
-    color: #F8F8FF; 
-}
+	tr:hover {
+	    background-color: #696969; 
+	    color: #F8F8FF; 
+	}
 	
 	</style>
-
 </head>
 
 
